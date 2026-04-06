@@ -25,7 +25,7 @@ const MONGODB_URI = process.env.MONGODB_URI;
 //GOOGLE OAUTH 
 app.use(passport.initialize());
 // ─── Middleware ────────────────────────────────────────────
-app.use(cors({ origin: ['http://localhost:5173', 'http://localhost:8080'], credentials: true }));
+app.use(cors({ origin: ['http://localhost:5173', 'http://localhost:8080','https://inspire-client.vercel.app/], credentials: true }));
 app.use(express.json());
 
 // ─── Routes ───────────────────────────────────────────────
